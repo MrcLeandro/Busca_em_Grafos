@@ -25,6 +25,6 @@ jobs:
      run: pip install papermill
 
    - name: Rodar o notebook 
-     run: papermill 01_rede_social.ipynb
+     run: papermill 01_rede_social.ipynb saida.ipynb
 
      
