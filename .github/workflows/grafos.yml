@@ -20,3 +20,8 @@ jobs:
 
    - name: Instalar Dependências
      run: pip install -r requirements.txt
+
+   - name: Rodar notebook
+     run: streamlit run app.py
+
+     
