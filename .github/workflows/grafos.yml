@@ -21,6 +21,9 @@ jobs:
    - name: Instalar Dependências
      run: pip install -r requirements.txt
 
+   - name: Registrar Kernel jupyter
+     run: python -m ipykernel install --user --name=python3
+     
    - name: Instalar o papermill
      run: pip install papermill
 
