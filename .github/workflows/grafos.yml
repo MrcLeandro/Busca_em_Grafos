@@ -19,4 +19,4 @@ jobs:
       python-version: 3.11
 
    - name: Instalar Dependências
-     run: pip install -r requirements
+     run: pip install -r requirements.txt
