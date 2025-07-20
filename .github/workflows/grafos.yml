@@ -20,13 +20,13 @@ jobs:
 
    - name: Instalar Dependências
      run: pip install -r requirements.txt
-
+     
+   - name: Instalar o papermill
+     run: pip install papermill ipykernel pandas streamlit
+     
    - name: Registrar Kernel jupyter
      run: python -m ipykernel install --user --name=python3
      
-   - name: Instalar o papermill
-     run: pip install papermill
-
    - name: Rodar o notebook 
      run: papermill 01_rede_social.ipynb saida.ipynb
 
